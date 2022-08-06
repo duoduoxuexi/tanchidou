@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>贪吃豆</title>
+    <style>  
+      .dot-up {
+  background-color: #7d4ffd;
+  width: 100px;
+  height: 50px;
+  border-radius: 50px 50px 0 0;
+  animation: eat-haha-up 1s infinite;
+  transform-origin: center bottom;
+}
+
+.dot-down {
+  background-color: #7d4ffd;
+  width: 100px;
+  height: 50px;
+  border-radius: 0 0 50px 50px;
+  animation: eat-haha-down 1s infinite;
+  transform-origin: center top;
+}
+
+@keyframes eat-haha-up {
+  0% {
+    transform: rotate(0)
+  }
+
+  25% {
+    transform: rotate(-45deg)
+  }
+
+  50% {
+    transform: rotate(0)
+  }
+
+  75% {
+    transform: rotate(-45deg)
+  }
+
+  to {
+    transform: rotate(0)
+  }
+}
+
+@keyframes eat-haha-down {
+  0% {
+    transform: rotate(0)
+  }
+
+  25% {
+    transform: rotate(45deg)
+  }
+
+  50% {
+    transform: rotate(0)
+  }
+
+  75% {
+    transform: rotate(45deg)
+  }
+
+  to {
+    transform: rotate(0)
+  }
+}
+    </style>
+  </head>
+  <body>
+   <div>
+  <div class="dot-up">
+  </div>
+  <div class="dot-down">
+  </div>
+</div>
+  </body>
+</html>
